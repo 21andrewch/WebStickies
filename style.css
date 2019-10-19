@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style-type: none;
+}
+body 
+{
+
+    background: white;
+}
+
+.section-1
+{
+  height: 35vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.section-2
+{
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.input
+{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-box input
+{
+    height: 25px;
+    width: 300px;
+    border-radius: 3px;
+    border: 2px solid gray;
+
+}
+
+.clear
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.clear button
+{
+    color: rgb(247, 85, 85);
+    width: 80px;
+    height: 25px;
+    background: none;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid rgb(233, 88, 88);
+    
+}
+
+.pad-1 
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad-2 
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad-3
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad-4 
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pad-5 
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad-6 
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad-7
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pad-8 
+{
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
