@@ -7,12 +7,28 @@
     </head>
 
     <body>
-        
+        <div class="Header">
+        WebStickies
+
+             <button class="help" id="help" onclick="dropDown()">
+                    ?
+             </button>   
+             <div class="help-box" id="help-box">   
+                 <div href="#help-content">Type in the textbox and click on the box you want your note to be in.
+                Click on the note you want to clear while holding the backspace key.
+             </div>
+        </div>   
+              
+        </div>
+        <div class="help-row">
+            
+        </div>
         <div class="input">
                 <div class="text-box">
                     <input id="textbox" type="text">
                 </div>
-               
+                
+                   
         </div>
         <div class="section-1">
             <button class="pad-1" id="pad1">
@@ -42,9 +58,6 @@
                 <ul id="note-8"></ul>
             </button>
         </div> 
-        <div class="clear">
-            <button class="clear">CLEAR</button>
-        </div>
         </div>
         
         <script src="app.js"></script>
