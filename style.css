@@ -15,6 +15,10 @@ body
     background: white;
 }
 
+.help-box p
+{
+    font-size: 10px;
+}
 .section-1
 {
   height: 40vh;
@@ -42,6 +46,7 @@ body
     align-items: center;
 }
 
+
 .Header
 {
     height: 15vh;
@@ -67,6 +72,7 @@ body
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
   }
 .pad-1 ul
 {
@@ -153,7 +159,7 @@ body
 
 .pad-2 
 {
-    background-color: rgb(193, 194, 250);
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;
@@ -162,7 +168,7 @@ body
 
 .pad-3
 {
-    background-color: none;
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;
@@ -171,7 +177,7 @@ body
 
 .pad-4 
 {
-    background-color: none;
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;
@@ -179,7 +185,7 @@ body
 }
 .pad-5 
 {
-    background-color: none;
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;
@@ -188,7 +194,7 @@ body
 
 .pad-6 
 {
-    background-color: none;
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;
@@ -197,7 +203,7 @@ body
 
 .pad-7
 {
-    background-color: none;
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;
@@ -206,7 +212,7 @@ body
 
 .pad-8 
 {
-    background-color: none;
+    background-color: rgb(255, 253, 162);
     height: 250px;
     width: 300px;
     border: none;

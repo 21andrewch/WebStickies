@@ -30,14 +30,16 @@ var deleteNote = false;
 var change = false;
 var readyToChange = false;
 
+
+
 addEventListener("keydown", function()
 {
-    if(event.keyCode = 9)
+    if(event.keyCode = 49)
     change = true;
 
     if(change && readyToChange)
     {
-        
+        increaseFontSizeBy1px();
     }
 })
 
