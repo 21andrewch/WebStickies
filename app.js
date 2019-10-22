@@ -20,6 +20,8 @@ var pad8 = document.getElementById("pad8");
 var clear = document.getElementById("clear");
 var textbox = document.getElementById("textbox");
 var newnote = document.getElementById("newnote");
+var isYellow = true;
+var justCleared = false;
 
 
 
@@ -32,8 +34,6 @@ var readyToDelete6 = false;
 var readyToDelete7 = false;
 var readyToDelete8 = false;
 var deleteNote = false;
-var change = false;
-var readyToChange = false;
 
 function setCookie(cname,cvalue,exdays)
  {
@@ -145,48 +145,96 @@ addEventListener("keydown", function()
         note1.innerHTML = "";
         readyToDelete1 = false;
         deleteNote = false;
+        pad1.style.backgroundColor = "white";
+        pad1.style.boxShadow = "none";
+        pad1.style.border = "1px dotted rgb(230,230,230)"
+        pad1.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete2 && deleteNote)
     {
         note2.innerHTML = "";
         readyToDelete2 = false;
         deleteNote = false;
+        pad2.style.backgroundColor = "white";
+        pad2.style.boxShadow = "none";
+        pad2.style.border = "1px dotted rgb(230,230,230)"
+        pad2.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete3 && deleteNote)
     {
         note3.innerHTML = "";
         readyToDelete3 = false;
         deleteNote = false;
+        pad3.style.backgroundColor = "white";
+        pad3.style.boxShadow = "none";
+        pad3.style.border = "1px dotted rgb(230,230,230)"
+        pad3.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete4 && deleteNote)
     {
         note4.innerHTML = "";
         readyToDelete4 = false;
         deleteNote = false;
+        pad4.style.backgroundColor = "white";
+        pad4.style.boxShadow = "none";
+        pad4.style.border = "1px dotted rgb(230,230,230)"
+        pad4.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete5 && deleteNote)
     {
         note5.innerHTML = "";
         readyToDelete5 = false;
         deleteNote = false;
+        pad5.style.backgroundColor = "white";
+        pad5.style.boxShadow = "none";
+        pad5.style.border = "1px dotted rgb(230,230,230)"
+        pad5.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete6 && deleteNote)
     {
         note6.innerHTML = "";
         readyToDelete6 = false;
         deleteNote = false;
+        pad6.style.backgroundColor = "white";
+        pad6.style.boxShadow = "none";
+        pad6.style.border = "1px dotted rgb(230,230,230)"
+        pad6.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete7 && deleteNote)
     {
         note7.innerHTML = "";
         readyToDelete7 = false;
         deleteNote = false;
+        pad7.style.backgroundColor = "white";
+        pad7.style.boxShadow = "none";
+        pad7.style.border = "1px dotted rgb(230,230,230)"
+        pad7.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
     if(readyToDelete8 && deleteNote)
     {
         note8.innerHTML = "";
         readyToDelete8 = false;
         deleteNote = false;
+        pad8.style.backgroundColor = "white";
+        pad8.style.boxShadow = "none";
+        pad8.style.border = "1px dotted rgb(230,230,230)"
+        pad8.style.borderRadius = "3px";
+        justCleared = true;
+        isYellow = false;
     }
 });
 
@@ -198,13 +246,22 @@ pad1.addEventListener("mouseup", function()
     note1.appendChild(note);
     textbox.value = "";
     setCookie("info1",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad1.style.backgroundColor = "rgb(255, 253, 162)";
+        pad1.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad1.style.border = "none";
+    }
+    isYellow = true;
     readyToDelete1 = false;
-    readyToChange = false;
 });
 pad1.addEventListener("mousedown", function()
 {
     readyToDelete1 = true;
-    readyToChange = true;
 });
 pad2.addEventListener("mouseup", function()
 {
@@ -213,6 +270,17 @@ pad2.addEventListener("mouseup", function()
     note2.appendChild(note);
     textbox.value = "";
     setCookie("info2",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad2.style.backgroundColor = "rgb(255, 253, 162)";
+        pad2.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad2.style.border = "none";
+    }
+        isYellow = true;
     readyToDelete2 = false;
 });
 pad2.addEventListener("mousedown", function()
@@ -226,6 +294,17 @@ pad3.addEventListener("mouseup", function()
     note3.appendChild(note);
     textbox.value = "";
     setCookie("info3",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad3.style.backgroundColor = "rgb(255, 253, 162)";
+        pad3.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad3.style.border = "none";
+    }
+        isYellow = true;
     readyToDelete3 = false;
 });
 pad3.addEventListener("mousedown", function()
@@ -239,6 +318,17 @@ pad4.addEventListener("mouseup", function()
     note4.appendChild(note);
     textbox.value = "";
     setCookie("info4",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad4.style.backgroundColor = "rgb(255, 253, 162)";
+        pad4.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad4.style.border = "none";
+    }
+    isYellow = true;
     readyToDelete4 = false;
 });
 pad4.addEventListener("mousedown", function()
@@ -252,6 +342,17 @@ pad5.addEventListener("mouseup", function()
     note5.appendChild(note);
     textbox.value = "";
     setCookie("info5",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad5.style.backgroundColor = "rgb(255, 253, 162)";
+        pad5.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad5.style.border = "none";
+    }
+        isYellow = true;
     readyToDelete5 = false;
 });
 pad5.addEventListener("mousedown", function()
@@ -265,6 +366,17 @@ pad6.addEventListener("mouseup", function()
     note6.appendChild(note);
     textbox.value = "";
     setCookie("info6",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad6.style.backgroundColor = "rgb(255, 253, 162)";
+        pad6.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad6.style.border = "none";
+    }
+        isYellow = true;
     readyToDelete6 = false;
 });
 pad6.addEventListener("mousedown", function()
@@ -279,6 +391,17 @@ pad7.addEventListener("mouseup", function()
     note7.appendChild(note);
     textbox.value = "";
     setCookie("info7",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad7.style.backgroundColor = "rgb(255, 253, 162)";
+        pad7.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad7.style.border = "none";
+    }
+        isYellow = true;
     readyToDelete7 = false;
 });
 pad7.addEventListener("mousedown", function()
@@ -292,9 +415,29 @@ pad8.addEventListener("mouseup", function()
     note8.appendChild(note);
     textbox.value = "";
     setCookie("info8",note.innerHTML,30);
+    if(justCleared)
+    {
+        justCleared = false;
+    }
+    else
+    {
+        pad8.style.backgroundColor = "rgb(255, 253, 162)";
+        pad8.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        pad8.style.border = "none";
+    }
+        isYellow = true;
     readyToDelete8 = false;
 });
 pad8.addEventListener("mousedown", function()
 {
     readyToDelete8 = true;
+});
+
+
+
+
+
+addEventListener("keydown", function()
+{
+
 });
