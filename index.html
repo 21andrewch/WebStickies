@@ -6,37 +6,20 @@
             <title>WebStickies</title>
     </head>
 
-    <body onload="checkCookie()">
-        <div class="Header">
-        <p>WebStickies</p>  
+    <body onload="checkCookie(),alertUser()">
+         <div class="head">
+            <button class="btn"id="btn" style="font-size: 50px;">WebStickies</button>     
+        </div>
 
-             <button class="help" id="help" onclick="dropDown()">
-                    ?
-             </button>   
-             <div class="help-box" id="help-box">   
-                <div href="#help-content">To Create A Note: Type in the textbox below and click on the notepad you want your note to be in.</div>
-                <div href="#help-content2">To Delete A Note: While holding the backspace key, click on the note you want to clear.</div> 
-                <p>v.1.0.2 Update: Removable notepads  Coming Soon: moar colors. change fontsize. enlarge notes. moar c o o k i e s...</p>
-                </div>
-             </div>   
               
-        </div>
-        <div class="help-row">
-            
-        </div>
         <div class="input">
                 <div class="text-box">
-                    <input id="textbox" type="text">
-                    
-                </div>
-                
-                   
+                    <input id="textbox" type="text"> 
+                </div> 
         </div>
         <div class="section-1">
             <button class="pad-1" id="pad1">
-                <ul id="note-1" >
-
-                </ul>
+                <ul id="note-1"></ul>
             </button>
             <button class="pad-2" id="pad2">            
                 <ul id="note-2"></ul>
@@ -61,7 +44,28 @@
             <button class="pad-8" id="pad8">
                 <ul id="note-8"></ul>
             </button>
-        </div> 
+        </div>
+        
+
+
+        <div id="myModal" class="modal">
+
+  
+        <div class="modal-content">
+            <div class="modal-header" style="color: black;">
+                <span class="close">&times;</span>
+                <h2>To Create a Note: Type in the textbox and click on the note you would like to add.</h2>
+            </div>
+            <div class="modal-footer" style="color: black;">
+                <h2>To Delete a Note: Click on a note and press the delete key.</h2>
+                <p>WebStickiesv1.0.3</p>
+            </div>
+            <button style="top: 400px; left: 655px;position: fixed; border-color: red; width: 100px; height: 60px;font-size: 20px;" 
+                    onclick="clearAll()">clear notes</button>
+        </div>
+
+        </div>
+
         </div>
         
         <script src="app.js"></script>
