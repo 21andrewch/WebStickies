@@ -113,11 +113,7 @@ function createNoteFromCookie(xinfo,xnote,padid)
 
 function alertUser()
 {
-    if(getCookie(visited)==0)
-    {
-        alert("Click on 'WebStickies' for to learn how to use this app");
-        setCookie(visited,1,30);
-    }
+    alert("Click on 'WebStickies' for to learn how to use this app");
 }
 
 function setCookie(cname,cvalue,exdays)
